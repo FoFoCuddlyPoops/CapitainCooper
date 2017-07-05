@@ -1,0 +1,224 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .01em;
+    color: #000a71;
+}
+
+.background, .background div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 0;
+}
+
+.bg-title {
+    z-index: 4;
+    text-transform: uppercase;
+    height: 1em;
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    font-size: 10vh;
+    line-height: 1em;
+    font-weight: 400;
+    letter-spacing: .02em;
+    color: #fff;
+    pointer-events: none;
+    display: none;
+}
+
+.bg-media, .bg-media div {
+    background-size: cover;
+    background-position: 50%;
+}
+
+#bg-1 {
+    background-color: #D9D7D3;
+}
+
+#bg-2 {
+    background-color: #B3FFDF;
+}
+
+#bg-3 {
+    background-color: #FFB099;
+}
+
+#bg-4 {
+    background-color: #D7C7FF;
+}
+
+#bg-5 {
+    background-color: #FCFF9C;
+}
+
+nav {
+    position: fixed;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    height: 8em;
+    font-size: 3.5rem;
+    font-size: 10vh;
+    width: 10em;
+}
+
+nav, nav a {
+    text-align: center;
+}
+
+nav a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    line-height: 2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .02em;
+}
+
+nav a:nth-child(1) {
+    top: 0;
+}
+
+nav a:nth-child(2) {
+    top: 20%;
+}
+
+nav a:nth-child(3) {
+    top: 40%;
+}
+
+nav a:nth-child(4) {
+    top: 60%;
+}
+
+nav a:nth-child(5) {
+    top: 80%;
+}
+
+section {
+    position: relative;
+    background: #fff;
+    padding: 2em 0 4em;
+    width: 100%;
+    min-height: 110vh;
+}
+
+section:before {
+    top: -50vh;
+    height: 50vh;
+    background: #fff;
+    background: linear-gradient(-180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.1) 10%,hsla(0,0%,100%,.9) 85%,#fff);
+}
+
+section:after {
+    bottom: -50vh;
+    height: 50vh;
+    background: #fff;
+    background: linear-gradient(0deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.1) 10%,hsla(0,0%,100%,.9) 85%,#fff);
+}
+
+section:after, section:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.gap {
+    width: 100%;
+    height: 200vh;
+    position: relative;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.gap.ending-gap, .gap.starting-gap {
+    height: 150vh;
+}
+
+.title-gap {
+    height: 0;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+h3, h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+h3 {
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, ol, p, ul {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p, ul {
+    margin-bottom: 1em;
+}
+
+li, ol, p, ul {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+article > * {
+    z-index: 5;
+}
+
+article, article > * {
+    position: relative;
+}
